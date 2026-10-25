@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hananta A.Y. Prawira | Applied Economist & Data Scientist</title>
+    <title>Hananta A.Y. Prawira | Portofolio & Pengalaman</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #fcfcfc;
-            --text-color: #2d3748;
-            --accent-color: #2b6cb0;
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+            --accent-color: #0284c7;
+            --accent-hover: #0369a1;
             --card-bg: #ffffff;
             --border-color: #e2e8f0;
-            --secondary-text: #4a5568;
+            --secondary-text: #64748b;
         }
 
         body {
@@ -25,98 +26,127 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 40px 20px;
         }
 
         header {
+            background: linear-gradient(135deg, #0284c7, #2563eb);
+            color: white;
+            padding: 40px 30px;
+            border-radius: 16px;
             margin-bottom: 40px;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 20px;
+            box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.2);
         }
 
-        h1 {
-            font-size: 2.2rem;
+        header h1 {
+            font-size: 2.3rem;
             margin: 0 0 8px 0;
-            color: #1a202c;
             font-weight: 700;
         }
 
         .subtitle {
-            font-size: 1.1rem;
-            color: var(--accent-color);
-            font-weight: 600;
+            font-size: 1.15rem;
+            opacity: 0.95;
+            font-weight: 500;
             margin-bottom: 15px;
         }
 
         .bio {
-            color: var(--secondary-text);
             font-size: 1rem;
-            margin-bottom: 20px;
+            opacity: 0.9;
+            margin-bottom: 25px;
+            line-height: 1.7;
         }
 
         .links a {
             display: inline-flex;
             align-items: center;
-            margin-right: 15px;
+            margin-right: 12px;
+            margin-bottom: 8px;
             color: var(--text-color);
+            background: white;
             text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-            padding: 6px 12px;
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 8px 16px;
+            border-radius: 8px;
             transition: all 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
 
         .links a:hover {
-            border-color: var(--accent-color);
-            color: var(--accent-color);
-            background-color: #ebf8ff;
+            background: #f1f5f9;
+            transform: translateY(-2px);
         }
 
         .links i {
-            margin-right: 6px;
-        }
-
-        section {
-            margin-bottom: 40px;
-        }
-
-        h2 {
-            font-size: 1.4rem;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 8px;
-            margin-bottom: 20px;
-            color: #1a202c;
-        }
-
-        .project-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-        }
-
-        .project-title {
-            font-size: 1.15rem;
-            font-weight: 600;
-            margin: 0 0 8px 0;
+            margin-right: 8px;
             color: var(--accent-color);
         }
 
-        .project-desc {
-            font-size: 0.95rem;
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #0f172a;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2 i {
+            color: var(--accent-color);
+        }
+
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.08);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background-color: #cbd5e1; /* Warna placeholder kalau foto belum diisi */
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin: 0 0 8px 0;
+            color: #0f172a;
+        }
+
+        .card-desc {
+            font-size: 0.9rem;
             color: var(--secondary-text);
-            margin-bottom: 12px;
+            margin-bottom: 15px;
         }
 
         .tags {
@@ -126,44 +156,21 @@
         }
 
         .tag {
-            background-color: #edf2f7;
-            color: #4a5568;
-            font-size: 0.8rem;
-            padding: 3px 8px;
-            border-radius: 4px;
-            font-family: monospace;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 15px;
-        }
-
-        .skill-box {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            padding: 15px;
-        }
-
-        .skill-box h3 {
-            font-size: 1rem;
-            margin: 0 0 8px 0;
-            color: #2d3748;
-        }
-
-        .skill-box p {
-            font-size: 0.88rem;
-            color: var(--secondary-text);
-            margin: 0;
+            background-color: #e0f2fe;
+            color: #0369a1;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
         }
 
         footer {
             text-align: center;
             font-size: 0.85rem;
-            color: #a0aec0;
+            color: var(--secondary-text);
             margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
         }
     </style>
 </head>
@@ -172,81 +179,96 @@
 <div class="container">
     <header>
         <h1>Hananta A.Y. Prawira</h1>
-        <div class="subtitle">Applied Economist & Data Scientist</div>
+        <div class="subtitle">Applied Economist & Data Specialist</div>
         <p class="bio">
-            Graduated in Development Economics from Universitas Diponegoro. Specializing in Spatial Econometrics, Regional Economics, and Applied Data Analytics. Experienced in spatial dependence modeling, web scraping pipelines, and developing interactive analytics dashboards.
+            Lulusan Ilmu Ekonomi / Pembangunan FEB Universitas Diponegoro. Memiliki ketertarikan mendalam pada Ekonometrika Spasial, Analisis Data Kuantitatif, serta berpengalaman aktif dalam kepanitiaan strategis, riset lapangan, dan kompetisi nasional.
         </p>
         <div class="links">
             <a href="https://linkedin.com/in/hanantaayp" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="https://github.com/hanantaayp-code" target="_blank"><i class="fab fa-github"></i> GitHub Main Profile</a>
+            <a href="https://github.com/hanantaayp-code" target="_blank"><i class="fab fa-github"></i> GitHub Code</a>
             <a href="mailto:hanantaayp@gmail.com"><i class="fas fa-envelope"></i> Email</a>
         </div>
     </header>
 
-    <section id="skills">
-        <h2>Technical Core</h2>
-        <div class="skills-grid">
-            <div class="skill-box">
-                <h3>Spatial Econometrics</h3>
-                <p>Spatial Durbin Model (SDM), GWPR, Moran's I, LISA Clustering, QGIS, R (sf, spdep).</p>
+    <!-- SECTION: KEPANITIAAN & ORGANISASI -->
+    <section>
+        <h2><i class="fas fa-users-cog"></i> Kepanitiaan & Peran Strategis</h2>
+        <div class="grid-cards">
+            
+            <div class="card">
+                <!-- Ganti src dengan link foto kepanitiaan kamu nanti -->
+                <img src="assets/img/deproz.jpg" alt="Deproz" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80'">
+                <div class="card-content">
+                    <div class="card-title">Steering Committee - Deproz</div>
+                    <div class="card-desc">Mengawasi kelancaran keseluruhan rangkaian acara Diponegoro Economics Project (Olimpiade, Seminar, & Business Case).</div>
+                    <div class="tags">
+                        <span class="tag">Pimpinan Acara</span>
+                        <span class="tag">Manajemen</span>
+                    </div>
+                </div>
             </div>
-            <div class="skill-box">
-                <h3>Applied Econometrics</h3>
-                <p>Static & Dynamic Panel Data (plm), Logit/Probit, Unconditional Quantile Regression (UQR), Stata.</p>
+
+            <div class="card">
+                <img src="assets/img/provel.jpg" alt="Provel" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=600&q=80'">
+                <div class="card-content">
+                    <div class="card-title">Koordinator Kompetisi - Provel</div>
+                    <div class="card-desc">Merancang sistem kompetisi, regulasi, dan menyusun seluruh instrumen soal Olimpiade Ekonomi SMA.</div>
+                    <div class="tags">
+                        <span class="tag">Olimpiade Eko</span>
+                        <span class="tag">Penyusunan Soal</span>
+                    </div>
+                </div>
             </div>
-            <div class="skill-box">
-                <h3>Data Engineering & Web</h3>
-                <p>Python (pandas, DuckDB, scipy), Web Scraping, Streamlit, Flask REST API, Plotly, Vercel.</p>
+
+            <div class="card">
+                <img src="assets/img/kelasbisnis.jpg" alt="Kelas Bisnis" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=600&q=80'">
+                <div class="card-content">
+                    <div class="card-title">Panitia Acara - Kelas Bisnis</div>
+                    <div class="card-desc">Menyusun rundown, townhall, serta rangkaian lomba Business Model Canvas (BMC) dan seminar bisnis.</div>
+                    <div class="tags">
+                        <span class="tag">Divisi Acara</span>
+                        <span class="tag">BMC</span>
+                    </div>
+                </div>
             </div>
+
         </div>
     </section>
 
-    <section id="projects">
-        <h2>Featured Projects & Research</h2>
+    <!-- SECTION: RISET, SURVEI & LAPANGAN -->
+    <section>
+        <h2><i class="fas fa-map-marked-alt"></i> Riset Lapangan & Proyek Tugas</h2>
+        <div class="grid-cards">
+            
+            <div class="card">
+                <img src="assets/img/survei.jpg" alt="Survei Lapangan" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80'">
+                <div class="card-content">
+                    <div class="card-title">Survei & Wawancara Lapangan</div>
+                    <div class="card-desc">Dokumentasi kegiatan peninjauan langsung dan wawancara mendalam dalam rangka pengumpulan data riset ekonomi regional.</div>
+                    <div class="tags">
+                        <span class="tag">Metodologi Riset</span>
+                        <span class="tag">Wawancara</span>
+                    </div>
+                </div>
+            </div>
 
-        <div class="project-card">
-            <div class="project-title">Eastern Indonesia Food Security Heterogeneity</div>
-            <div class="project-desc">
-                Applied Geographically Weighted Panel Regression (GWPR) and Spatial Durbin Model (SDM) panel frameworks to analyze spatial spillovers and regional heterogeneity across 185 regencies/cities in Eastern Indonesia.
+            <div class="card">
+                <img src="assets/img/skripsi.jpg" alt="Analisis Spasial" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80'">
+                <div class="card-content">
+                    <div class="card-title">Pemodelan Ekonometrika Spasial</div>
+                    <div class="card-desc">Eksplorasi data spasial ketahanan pangan menggunakan GWPR & Spatial Durbin Model panel di Indonesia Timur.</div>
+                    <div class="tags">
+                        <span class="card-tag tag">R & QGIS</span>
+                        <span class="tag">Skripsi</span>
+                    </div>
+                </div>
             </div>
-            <div class="tags">
-                <span class="tag">Spatial Econometrics</span>
-                <span class="tag">GWPR</span>
-                <span class="tag">SDM</span>
-                <span class="tag">R</span>
-                <span class="tag">QGIS</span>
-            </div>
-        </div>
 
-        <div class="project-card">
-            <div class="project-title">Indonesian Regional Head Data Extraction Pipeline</div>
-            <div class="project-desc">
-                Built an automated web scraping and data cleaning pipeline to structure 9,000+ historical Indonesian administrative and regional leadership records for institutional economic research.
-            </div>
-            <div class="tags">
-                <span class="tag">Python</span>
-                <span class="tag">Web Scraping</span>
-                <span class="tag">Data Engineering</span>
-                <span class="tag">Pandas</span>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-title">Decoupled Credit Demand-Supply Gap Dashboard</div>
-            <div class="project-desc">
-                Developed a decoupled interactive analytical web dashboard using a Python Flask REST API backend and Plotly.js front-end deployed on Vercel to map credit access gap metrics.
-            </div>
-            <div class="tags">
-                <span class="tag">Python</span>
-                <span class="tag">Flask</span>
-                <span class="tag">Plotly.js</span>
-                <span class="tag">Vercel</span>
-            </div>
         </div>
     </section>
 
     <footer>
-        &copy; 2026 Hananta A.Y. Prawira. Hosted on GitHub Pages.
+        &copy; 2026 Hananta A.Y. Prawira. Colorful & Dynamic Portfolio.
     </footer>
 </div>
 
