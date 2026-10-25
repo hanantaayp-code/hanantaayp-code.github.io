@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hananta A.Y. Prawira | Applied Economist & Data Scientist</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #fcfcfc;
+            --text-color: #2d3748;
+            --accent-color: #2b6cb0;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --secondary-text: #4a5568;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin: 0 0 8px 0;
+            color: #1a202c;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .bio {
+            color: var(--secondary-text);
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .links a {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 15px;
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            padding: 6px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .links a:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+            background-color: #ebf8ff;
+        }
+
+        .links i {
+            margin-right: 6px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            color: #1a202c;
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .project-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin: 0 0 8px 0;
+            color: var(--accent-color);
+        }
+
+        .project-desc {
+            font-size: 0.95rem;
+            color: var(--secondary-text);
+            margin-bottom: 12px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .tag {
+            background-color: #edf2f7;
+            color: #4a5568;
+            font-size: 0.8rem;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-box {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 15px;
+        }
+
+        .skill-box h3 {
+            font-size: 1rem;
+            margin: 0 0 8px 0;
+            color: #2d3748;
+        }
+
+        .skill-box p {
+            font-size: 0.88rem;
+            color: var(--secondary-text);
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #a0aec0;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Hananta A.Y. Prawira</h1>
+        <div class="subtitle">Applied Economist & Data Scientist</div>
+        <p class="bio">
+            Graduated in Development Economics from Universitas Diponegoro. Specializing in Spatial Econometrics, Regional Economics, and Applied Data Analytics. Experienced in spatial dependence modeling, web scraping pipelines, and developing interactive analytics dashboards.
+        </p>
+        <div class="links">
+            <a href="https://linkedin.com/in/hanantaayp" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/hanantaayp-code" target="_blank"><i class="fab fa-github"></i> GitHub Main Profile</a>
+            <a href="mailto:hanantaayp@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+        </div>
+    </header>
+
+    <section id="skills">
+        <h2>Technical Core</h2>
+        <div class="skills-grid">
+            <div class="skill-box">
+                <h3>Spatial Econometrics</h3>
+                <p>Spatial Durbin Model (SDM), GWPR, Moran's I, LISA Clustering, QGIS, R (sf, spdep).</p>
+            </div>
+            <div class="skill-box">
+                <h3>Applied Econometrics</h3>
+                <p>Static & Dynamic Panel Data (plm), Logit/Probit, Unconditional Quantile Regression (UQR), Stata.</p>
+            </div>
+            <div class="skill-box">
+                <h3>Data Engineering & Web</h3>
+                <p>Python (pandas, DuckDB, scipy), Web Scraping, Streamlit, Flask REST API, Plotly, Vercel.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects & Research</h2>
+
+        <div class="project-card">
+            <div class="project-title">Eastern Indonesia Food Security Heterogeneity</div>
+            <div class="project-desc">
+                Applied Geographically Weighted Panel Regression (GWPR) and Spatial Durbin Model (SDM) panel frameworks to analyze spatial spillovers and regional heterogeneity across 185 regencies/cities in Eastern Indonesia.
+            </div>
+            <div class="tags">
+                <span class="tag">Spatial Econometrics</span>
+                <span class="tag">GWPR</span>
+                <span class="tag">SDM</span>
+                <span class="tag">R</span>
+                <span class="tag">QGIS</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">Indonesian Regional Head Data Extraction Pipeline</div>
+            <div class="project-desc">
+                Built an automated web scraping and data cleaning pipeline to structure 9,000+ historical Indonesian administrative and regional leadership records for institutional economic research.
+            </div>
+            <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Web Scraping</span>
+                <span class="tag">Data Engineering</span>
+                <span class="tag">Pandas</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">Decoupled Credit Demand-Supply Gap Dashboard</div>
+            <div class="project-desc">
+                Developed a decoupled interactive analytical web dashboard using a Python Flask REST API backend and Plotly.js front-end deployed on Vercel to map credit access gap metrics.
+            </div>
+            <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">Plotly.js</span>
+                <span class="tag">Vercel</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 Hananta A.Y. Prawira. Hosted on GitHub Pages.
+    </footer>
+</div>
+
+</body>
+</html>
