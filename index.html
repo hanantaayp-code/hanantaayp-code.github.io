@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -303,13 +303,13 @@
             font-size: 0.88rem;
         }
 
-        /* Responsif untuk layar HP */
+        /* Responsive Layout for Mobile Devices */
         @media (max-width: 768px) {
             .profile-grid, .info-cards-grid {
                 grid-template-columns: 1fr;
             }
             .nav-links {
-                display: none; /* Bisa dikembangkan jadi burger menu */
+                display: none;
             }
         }
     </style>
@@ -335,10 +335,15 @@
         <section id="about">
             <div class="profile-grid">
                 
-                <!-- KARTU FOTO PROFIL -->
+                <!-- PROFILE CARD -->
                 <div class="profile-card">
-                    <!-- Ganti 'images/foto-profil.jpg.jpeg' dengan foto formal/semiformil kamu -->
-                    <img src="images/foto-profil.jpg" alt="Hananta Angger Yuga Prawira" class="profile-img" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80'">
+                    <!-- ================================================================= -->
+                    <!-- [UBAH FOTO PROFIL DI SINI] -->
+                    <!-- Path ini sudah disesuaikan dengan file yang kamu upload: 'images/foto-profil.jpg.jpeg' -->
+                    <!-- Jika di kemudian hari kamu mengganti nama filenya, ubah bagian src="..." di bawah -->
+                    <!-- ================================================================= -->
+                    <img src="images/foto-profil.jpg.jpeg" alt="Hananta Angger Yuga Prawira" class="profile-img" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80'">
+                    
                     <h1 class="profile-name">Hananta Angger Yuga Prawira</h1>
                     <div class="profile-title">Applied Economist & Data Scientist</div>
                     
@@ -349,25 +354,25 @@
                     </div>
                 </div>
 
-                <!-- DESKRIPSI BIO & PENDIDIKAN -->
+                <!-- BIO & EDUCATION DESCRIPTION -->
                 <div class="bio-box">
                     <h3>Hello, I'm Hananta 👋</h3>
                     <p class="bio-text">
-                       Bachelor of Economics (S.E.) graduate from the Department of Economics and Development Studies, Faculty of Economics and Business, Universitas Diponegoro. Specialized in Spatial Econometrics Modeling, Regional Economics, and Quantitative Data Analysis. Experienced in processing large-scale spatial macro datasets, executing web scraping pipelines, and building interactive dashboards. Interested in food security, health, political economy, disparity, and regional and territorial development.
+                        Bachelor of Economics (B.Econ / S.E.) graduate from the Department of Economics and Development Studies, Faculty of Economics and Business, Universitas Diponegoro. Specialized in Spatial Econometrics Modeling, Regional Economics, and Quantitative Data Analysis. Experienced in processing large-scale spatial macro datasets, executing web scraping pipelines, and building interactive dashboards. Passionate about food security, public health, political economy, regional inequality, and spatial development dynamics.
                     </p>
 
                     <div class="info-cards-grid">
                         <div class="info-card">
-                            <h4><i class="fas fa-graduation-cap"></i> Pendidikan</h4>
-                            <p><strong>S1 Ilmu Ekonomi / Pembangunan</strong></p>
+                            <h4><i class="fas fa-graduation-cap"></i> Education</h4>
+                            <p><strong>B.Econ in Development Economics</strong></p>
                             <p style="font-size: 0.88rem; color: var(--text-muted);">FEB Universitas Diponegoro</p>
-                            <p style="font-size: 0.85rem; color: var(--primary); font-weight: 600; margin-top: 4px;">Lulus Terbaik  (3.6 Tahun)</p>
+                            <p style="font-size: 0.85rem; color: var(--primary); font-weight: 600; margin-top: 4px;">Best Graduate • Completed in 3.6 Years (GPA 3.76/4.00)</p>
                         </div>
 
                         <div class="info-card">
-                            <h4><i class="fas fa-book-open"></i> Skripsi / Undergraduate Thesis</h4>
-                            <p style="font-size: 0.9rem;"><strong>"Heterogenitas dan Efek Limpahan Spasial Ketahanan Pangan di Indonesia Timur"</strong></p>
-                            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Metode: Geographically Weighted Panel Regression (GWPR) & Spatial Durbin Model (SDM).</p>
+                            <h4><i class="fas fa-book-open"></i> Undergraduate Thesis</h4>
+                            <p style="font-size: 0.9rem;"><strong>"Heterogeneity and Spatial Spillover Effects of Food Security in Eastern Indonesia"</strong></p>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Methodology: Geographically Weighted Panel Regression (GWPR) & Spatial Durbin Model (SDM).</p>
                         </div>
                     </div>
                 </div>
@@ -376,53 +381,65 @@
         </section>
 
 
-        <!-- SECTION 2: CAMPUS ACTIVITY & KEPANITIAAN -->
+        <!-- SECTION 2: CAMPUS ACTIVITY & LEADERSHIP -->
         <section id="activities">
             <div class="section-header">
                 <h2><i class="fas fa-users"></i> Campus Activity & Leadership</h2>
-                <p>Pengalaman manajerial dan kepanitiaan strategis selama masa perkuliahan.</p>
+                <p>Strategic managerial and committee execution experience during university studies.</p>
             </div>
 
             <div class="cards-grid">
                 
-                <!-- DEPROZ -->
+                <!-- ITEM: DEPROZ -->
                 <div class="item-card">
-                    <img src="images/deproz.jpg" alt="Diponegoro Economics Project" class="item-card item-img" onerror="this.src='https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80'">
+                    <!-- ================================================================= -->
+                    <!-- [UBAH FOTO DEPROZ DI SINI] -->
+                    <!-- Upload foto kegiatan Deproz ke folder 'images' lalu ganti 'images/deproz.jpg' di bawah -->
+                    <!-- ================================================================= -->
+                    <img src="images/deproz.jpg" alt="Diponegoro Economics Project" class="item-img" onerror="this.src='https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80'">
                     <div class="item-body">
                         <span class="item-tag">Steering Committee</span>
                         <h3 class="item-title">Diponegoro Economics Project (Deproz)</h3>
-                        <p class="item-desc">Supervisi dan pengawalan eksekusi keseluruhan rangkaian acara meliputi Olimpiade Ekonomi SMA, Seminar Ekonomi, dan Business Case Competition.</p>
+                        <p class="item-desc">Supervised and ensured end-to-end execution of overall event series, including High School Economics Olympiad, Economics Seminar, and Business Case Competition.</p>
                         <div class="badge-container">
                             <span class="tech-badge">Event Management</span>
-                            <span class="tech-badge">Supervisi Acara</span>
+                            <span class="tech-badge">Strategic Supervision</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- PROVEL -->
+                <!-- ITEM: PROVEL -->
                 <div class="item-card">
-                    <img src="images/provel.jpg" alt="Provel Econolympics" class="item-card item-img" onerror="this.src='https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=600&q=80'">
+                    <!-- ================================================================= -->
+                    <!-- [UBAH FOTO PROVEL DI SINI] -->
+                    <!-- Upload foto kegiatan Provel ke folder 'images' lalu ganti 'images/provel.jpg' di bawah -->
+                    <!-- ================================================================= -->
+                    <img src="images/provel.jpg" alt="Provel Econolympics" class="item-img" onerror="this.src='https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=600&q=80'">
                     <div class="item-body">
-                        <span class="item-tag">Koordinator Bidang</span>
+                        <span class="item-tag">Division Coordinator</span>
                         <h3 class="item-title">Provel (Econolympics)</h3>
-                        <p class="item-desc">Memimpin divisi kompetisi dalam menyusun sistem kompetisi, regulasi lomba, dan perumusan seluruh instrumen soal Olimpiade Ekonomi SMA.</p>
+                        <p class="item-desc">Led the competition division in designing competition rules, grading frameworks, and formulating exam instruments for the High School Economics Olympiad.</p>
                         <div class="badge-container">
-                            <span class="tech-badge">Penyusunan Soal</span>
-                            <span class="tech-badge">Sistem Kompetisi</span>
+                            <span class="tech-badge">Problem Setting</span>
+                            <span class="tech-badge">Competition System</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- KELAS BISNIS -->
+                <!-- ITEM: KELAS BISNIS -->
                 <div class="item-card">
-                    <img src="images/kelas-bisnis.jpg" alt="Kelas Bisnis" class="item-card item-img" onerror="this.src='https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=600&q=80'">
+                    <!-- ================================================================= -->
+                    <!-- [UBAH FOTO KELAS BISNIS DI SINI] -->
+                    <!-- Upload foto kegiatan Kelas Bisnis ke folder 'images' lalu ganti 'images/kelas-bisnis.jpg' di bawah -->
+                    <!-- ================================================================= -->
+                    <img src="images/kelas-bisnis.jpg" alt="Kelas Bisnis" class="item-img" onerror="this.src='https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=600&q=80'">
                     <div class="item-body">
-                        <span class="item-tag">Divisi Acara</span>
-                        <h3 class="item-title">Kelas Bisnis FEB UNDIP</h3>
-                        <p class="item-desc">Menyusun *rundown*, konsep *townhall*, serta mengatur alur teknis lomba Business Model Canvas (BMC) dan seminar bisnis.</p>
+                        <span class="item-tag">Event Organizing Committee</span>
+                        <h3 class="item-title">Business Class FEB UNDIP</h3>
+                        <p class="item-desc">Formulated master rundowns, townhall flow, and technical execution for Business Model Canvas (BMC) competitions and business seminars.</p>
                         <div class="badge-container">
                             <span class="tech-badge">Rundown & BMC</span>
-                            <span class="tech-badge">Konseptor</span>
+                            <span class="tech-badge">Event Conceptor</span>
                         </div>
                     </div>
                 </div>
@@ -435,18 +452,22 @@
         <section id="projects">
             <div class="section-header">
                 <h2><i class="fas fa-microscope"></i> Research, Fieldwork & Data Projects</h2>
-                <p>Dokumentasi survei lapangan, analisis ekonometrika, dan pembuatan produk data.</p>
+                <p>Documentation of field surveys, quantitative econometrics modeling, and data products.</p>
             </div>
 
             <div class="cards-grid">
                 
-                <!-- SURVEI LAPANGAN -->
+                <!-- ITEM: SURVEI LAPANGAN -->
                 <div class="item-card">
-                    <img src="images/survei-lapangan.jpg" alt="Survei Lapangan" class="item-card item-img" onerror="this.src='https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80'">
+                    <!-- ================================================================= -->
+                    <!-- [UBAH FOTO SURVEI LAPANGAN DI SINI] -->
+                    <!-- Upload foto kegiatan survei/wawancara ke folder 'images' lalu ganti 'images/survei-lapangan.jpg' di bawah -->
+                    <!-- ================================================================= -->
+                    <img src="images/survei-lapangan.jpg" alt="Field Survey" class="item-img" onerror="this.src='https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80'">
                     <div class="item-body">
-                        <span class="item-tag">Survei & Wawancara</span>
-                        <h3 class="item-title">Riset & Peninjauan Lapangan</h3>
-                        <p class="item-desc">Dokumentasi pengumpulan data primer melalui wawancara mendalam dan survei kuisioner langsung ke responden di lapangan.</p>
+                        <span class="item-tag">Survey & Interview</span>
+                        <h3 class="item-title">Fieldwork & Primary Data Collection</h3>
+                        <p class="item-desc">Primary data gathering through in-depth field interviews and questionnaire surveys across target respondents for regional economics research.</p>
                         <div class="badge-container">
                             <span class="tech-badge">Data Collection</span>
                             <span class="tech-badge">Field Interview</span>
@@ -454,28 +475,36 @@
                     </div>
                 </div>
 
-                <!-- SCRAPING PROJECT -->
+                <!-- ITEM: SCRAPING PROJECT -->
                 <div class="item-card">
-                    <img src="images/scraping-project.jpg" alt="Scraping Project" class="item-card item-img" onerror="this.src='https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80'">
+                    <!-- ================================================================= -->
+                    <!-- [UBAH FOTO PROYEK SCRAPING DI SINI] -->
+                    <!-- Upload screenshot/foto proyek scraping ke folder 'images' lalu ganti 'images/scraping-project.jpg' di bawah -->
+                    <!-- ================================================================= -->
+                    <img src="images/scraping-project.jpg" alt="Scraping Project" class="item-img" onerror="this.src='https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80'">
                     <div class="item-body">
                         <span class="item-tag">Data Engineering</span>
                         <h3 class="item-title">Regional Head Scraping Pipeline</h3>
-                        <p class="item-desc">Membangun *automated web scraping pipeline* menggunakan Python untuk menstrukturkan 9.000+ data riwayat kepala daerah Indonesia.</p>
+                        <p class="item-desc">Engineered an automated Python web scraping and data cleaning pipeline to extract and structure 9,000+ historical Indonesian regional leadership records.</p>
                         <div class="badge-container">
                             <span class="tech-badge">Python</span>
                             <span class="tech-badge">Pandas</span>
-                            <span class="tech-badge">Scraping</span>
+                            <span class="tech-badge">Web Scraping</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- DASHBOARD -->
+                <!-- ITEM: DASHBOARD -->
                 <div class="item-card">
-                    <img src="images/dashboard.jpg" alt="Credit Gap Dashboard" class="item-card item-img" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80'">
+                    <!-- ================================================================= -->
+                    <!-- [UBAH FOTO DASHBOARD DI SINI] -->
+                    <!-- Upload screenshot dashboard ke folder 'images' lalu ganti 'images/dashboard.jpg' di bawah -->
+                    <!-- ================================================================= -->
+                    <img src="images/dashboard.jpg" alt="Credit Gap Dashboard" class="item-img" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80'">
                     <div class="item-body">
                         <span class="item-tag">Web App</span>
-                        <h3 class="item-title">Credit Gap Interactive Dashboard</h3>
-                        <p class="item-desc">Dashboard analitik interaktif terdekopel berbasis Python Flask REST API backend dan Plotly.js yang di-deploy pada platform Vercel.</p>
+                        <h3 class="item-title">Credit Demand-Supply Gap Dashboard</h3>
+                        <p class="item-desc">Developed a decoupled interactive analytical web app leveraging Python Flask REST API backend and Plotly.js front-end deployed on Vercel.</p>
                         <div class="badge-container">
                             <span class="tech-badge">Flask API</span>
                             <span class="tech-badge">Plotly.js</span>
@@ -492,32 +521,40 @@
         <section id="experience">
             <div class="section-header">
                 <h2><i class="fas fa-briefcase"></i> Internship & Professional Experience</h2>
-                <p>Pengalaman kerja, magang pemerintahan, dan peran Research Assistant.</p>
+                <p>Government internship, research assistantships, and analytical roles.</p>
             </div>
 
             <div class="cards-grid">
                 
-                <!-- MAGANG DPRD -->
+                <!-- ITEM: MAGANG DPRD -->
                 <div class="item-card">
-                    <img src="images/dprd.jpg" alt="Magang DPRD Jateng" class="item-card item-img" onerror="this.src='https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=600&q=80'">
+                    <!-- ================================================================= -->
+                    <!-- [UBAH FOTO MAGANG DPRD DI SINI] -->
+                    <!-- Upload foto kegiatan magang DPRD ke folder 'images' lalu ganti 'images/dprd.jpg' di bawah -->
+                    <!-- ================================================================= -->
+                    <img src="images/dprd.jpg" alt="DPRD Central Java Internship" class="item-img" onerror="this.src='https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=600&q=80'">
                     <div class="item-body">
                         <span class="item-tag">Government Internship</span>
-                        <h3 class="item-title">Komisi A DPRD Jawa Tengah</h3>
-                        <p class="item-desc">Terlibat dalam penelaahan dokumen kebijakan publik, pengawasan jalannya rapat konsultasi eksekutif-legislatif, dan analisis RPJMD daerah.</p>
+                        <h3 class="item-title">Commission A DPRD Central Java Province</h3>
+                        <p class="item-desc">Reviewed public policy documentation, monitored executive-legislative consultation sessions, and analyzed regional development planning documents (RPJMD).</p>
                         <div class="badge-container">
-                            <span class="tech-badge">Kebijakan Publik</span>
-                            <span class="tech-badge">Pemerintahan</span>
+                            <span class="tech-badge">Public Policy</span>
+                            <span class="tech-badge">Governance</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- RESEARCH ASSISTANT -->
+                <!-- ITEM: RESEARCH ASSISTANT -->
                 <div class="item-card">
-                    <img src="images/research-assistant.jpg" alt="Research Assistant" class="item-card item-img" onerror="this.src='https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80'">
+                    <!-- ================================================================= -->
+                    <!-- [UBAH FOTO RESEARCH ASSISTANT DI SINI] -->
+                    <!-- Upload foto/dokumen kerja RA ke folder 'images' lalu ganti 'images/research-assistant.jpg' di bawah -->
+                    <!-- ================================================================= -->
+                    <img src="images/research-assistant.jpg" alt="Research Assistant" class="item-img" onerror="this.src='https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80'">
                     <div class="item-body">
                         <span class="item-tag">Professional Project</span>
                         <h3 class="item-title">Remote Research Assistant & Data Specialist</h3>
-                        <p class="item-desc">Pengolahan dataset kesehatan BPJS, pemodelan analisis deret waktu (*time-series forecasting* Prophet), dan kompilasi data spasial mikro PODES.</p>
+                        <p class="item-desc">Processed BPJS healthcare datasets, executed Prophet time-series forecasting models, and structured PODES village-level spatial indicators.</p>
                         <div class="badge-container">
                             <span class="tech-badge">R</span>
                             <span class="tech-badge">Prophet</span>
